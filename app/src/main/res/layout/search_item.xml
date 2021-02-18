@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:gravity="center_vertical"
+    android:background="@color/cardview_light_background">
+
+    <ImageView
+        android:id="@+id/btn_search"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_action_search"/>
+
+    <EditText
+        android:id="@+id/edt_search_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        android:hint="Search..."
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:lines="1"
+        android:textColorHint="#6E6E6E"
+        android:textColor="#322C2C"
+        android:textSize="14sp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/iv_clear_text"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:adjustViewBounds="true"
+        android:visibility="visible"
+        android:src="@drawable/ic_action_voice"/>
+
+</LinearLayout>
